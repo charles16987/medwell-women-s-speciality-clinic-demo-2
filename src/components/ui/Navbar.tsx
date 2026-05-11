@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Phone, MessageSquare, Sun, Moon } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/src/lib/utils';
+import logoimg from '../../assests/Medwell-logo.png';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,18 +36,21 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-4',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-0',
         isScrolled ? 'bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg shadow-sm py-3' : 'bg-transparent'
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between logo-container">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-terracotta rounded-lg flex items-center justify-center text-white font-serif text-xl font-bold group-hover:rotate-12 transition-transform">
+          {/* <div className="w-10 h-10 bg-terracotta rounded-lg flex items-center justify-center text-white font-serif text-xl font-bold group-hover:rotate-12 transition-transform">
             M
           </div>
           <div className="flex flex-col">
             <span className="font-serif text-xl font-bold tracking-tight text-slate-900 dark:text-white logo-text">MEDWELL</span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-sage font-semibold -mt-1">Speciality Clinic</span>
+          </div> */}
+          <div className='logo-img'>
+             <img src={logoimg} alt="" />
           </div>
         </Link>
 

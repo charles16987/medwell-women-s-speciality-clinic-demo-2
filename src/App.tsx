@@ -14,7 +14,7 @@ import Services from './pages/Services';
 import PatientStories from './pages/PatientStories';
 import Contact from './pages/Contact';
 
-const PRIMARY_COLOR = '#c4622d';
+const PRIMARY_COLOR = '#673894';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -246,9 +246,9 @@ export default function App() {
               style={{
                 border: `1px solid ${PRIMARY_COLOR}`,
                 background:
-                  'radial-gradient(circle, rgba(196,98,45,0.18) 0%, rgba(196,98,45,0.03) 70%)',
+                  'radial-gradient(circle, rgba(103,56,148,0.18) 0%, rgba(103,56,148,0.03) 70%)',
                 boxShadow:
-                  '0 0 40px rgba(196,98,45,0.45), inset 0 0 20px rgba(196,98,45,0.25)',
+                  '0 0 40px rgba(103,56,148,0.45), inset 0 0 20px rgba(103,56,148,0.25)',
                 backdropFilter: 'blur(4px)',
               }}
             />
@@ -269,7 +269,7 @@ export default function App() {
               style={{
                 backgroundColor: PRIMARY_COLOR,
                 boxShadow:
-                  '0 0 20px #c4622d, 0 0 60px #c4622d, 0 0 90px #c4622d',
+                  '0 0 20px #673894, 0 0 60px #673894, 0 0 90px #673894',
               }}
             />
 
@@ -286,7 +286,7 @@ export default function App() {
               }}
               className="fixed top-0 left-0 w-8 h-8 rounded-full blur-xl pointer-events-none z-[9998]"
               style={{
-                backgroundColor: 'rgba(196,98,45,0.25)',
+                backgroundColor: 'rgba(103,56,148,0.25)',
               }}
             />
 

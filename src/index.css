@@ -5,9 +5,9 @@
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
   
-  --color-terracotta: #C4622D;
+  --color-terracotta: #673894;
   --color-sage: #7A8C6E;
-  --color-cream: #FAF6EF;
+  --color-cream: #f9f3ff;
   --color-sage-light: #A4B29B;
   --color-terracotta-light: #D98C64;
 }
@@ -63,7 +63,7 @@
   color: #fff;
 }
 .banner-img {
-  background-image: url(./assests/banner-img.jpg);
+  background-image: url(./assests/banner-img-color1.jpg);
   background-size: cover;
 }
 .banner-img h1
@@ -83,6 +83,16 @@ body {
 
 /* Optional Glass Glow */
 .cursor-glow {
-  background: #c4622d !important;
+  background: #673894 !important;
   backdrop-filter: blur(10px) !important;
+}
+.logo-img img{
+  max-width: 250px;
+}
+nav.fixed {
+  background: #fff;
+  padding: 0 !important;
+}
+.logo-container .dark\:text-slate-300 {
+    color: #000 !important;
 }
